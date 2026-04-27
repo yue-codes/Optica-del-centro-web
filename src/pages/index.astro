@@ -1,8 +1,19 @@
 ---
-import Layout from "@layouts/Layout.astro";
 import "@styles/global.css";
+import Layout from "@layouts/Layout.astro";
+import Hero from "@components/sections/Hero.astro";
+import Services from "@components/sections/Services.astro";
+import Mision from "@components/sections/Mision.astro";
+import Locations from "@components/sections/Locations.astro";
+import Reviews from "@components/sections/Reviews.astro";
+import Contact from "@components/sections/Contact.astro";
 ---
 
 <Layout>
-  <h1 class="text-3xl font-bold text-amber-300 underline">Hello world!</h1>
+  <Hero />
+  <Services />
+  <Mision />
+  <Locations />
+  <Reviews />
+  <Contact />
 </Layout>

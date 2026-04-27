@@ -1,0 +1,98 @@
+---
+// TODO: Reemplaza estos datos con reseñas reales
+const resenas = [
+  {
+    nombre: "Nombre del paciente",
+    ocupacion: "Paciente",
+    texto: "Escribe aquí la reseña del paciente. Puede ser un comentario sobre la atención, los servicios o la experiencia en general.",
+    estrellas: 5,
+  },
+  {
+    nombre: "Nombre del paciente",
+    ocupacion: "Paciente",
+    texto: "Escribe aquí la reseña del paciente. Puede ser un comentario sobre la atención, los servicios o la experiencia en general.",
+    estrellas: 5,
+  },
+  {
+    nombre: "Nombre del paciente",
+    ocupacion: "Paciente",
+    texto: "Escribe aquí la reseña del paciente. Puede ser un comentario sobre la atención, los servicios o la experiencia en general.",
+    estrellas: 5,
+  },
+];
+---
+
+<section id="resenas" class="relative bg-primary py-24 overflow-hidden">
+  <!-- Glow de fondo -->
+  <div
+    class="bg-accent/8 pointer-events-none absolute top-0 right-0 h-[500px] w-[500px] rounded-full blur-[140px]"
+  >
+  </div>
+
+  <div class="relative mx-auto max-w-7xl px-6">
+    <!-- Encabezado -->
+    <div class="mb-16 text-center">
+      <span
+        class="text-accent mb-3 inline-block text-sm font-semibold tracking-widest uppercase"
+      >
+        Lo que dicen nuestros pacientes
+      </span>
+      <h2 class="text-4xl font-bold text-white lg:text-5xl">Reseñas</h2>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-3">
+      {
+        resenas.map((r) => (
+          <div class="flex flex-col justify-between rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-all duration-300 hover:border-accent/30 hover:bg-white/8">
+            <!-- Estrellas -->
+            <div>
+              <div class="mb-6 flex gap-1">
+                {Array.from({ length: r.estrellas }).map(() => (
+                  <svg
+                    class="h-5 w-5 fill-current text-amber-400"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+
+              <!-- Comilla decorativa -->
+              <svg
+                class="text-accent/30 mb-4 h-8 w-8"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+              </svg>
+
+              <p class="leading-relaxed text-slate-300 italic">"{r.texto}"</p>
+            </div>
+
+            <!-- Autor -->
+            <div class="mt-8 flex items-center gap-3 border-t border-white/10 pt-6">
+              <div class="bg-accent/20 flex h-10 w-10 shrink-0 items-center justify-center rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="text-accent h-5 w-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <p class="text-sm font-bold text-white">{r.nombre}</p>
+                <p class="text-xs text-slate-400">{r.ocupacion}</p>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

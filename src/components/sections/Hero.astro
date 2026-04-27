@@ -1,0 +1,234 @@
+---
+const whatsappUrl =
+  "https://wa.me/529511398701?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita";
+---
+
+<section
+  class="relative flex min-h-screen items-center overflow-hidden bg-gradient-to-br from-[#0d2a46] via-primary to-[#1e4a72]"
+>
+  <!-- Glows de fondo -->
+  <div
+    class="pointer-events-none absolute top-0 right-0 h-[600px] w-[600px] rounded-full bg-accent/10 blur-[120px]"
+  ></div>
+  <div
+    class="pointer-events-none absolute bottom-0 left-0 h-[400px] w-[400px] rounded-full bg-accent/8 blur-[100px]"
+  ></div>
+
+  <!-- Grid de puntos -->
+  <div
+    class="pointer-events-none absolute inset-0 opacity-[0.15]"
+    style="background-image: radial-gradient(circle, #3aafb9 1px, transparent 1px); background-size: 40px 40px;"
+  ></div>
+
+  <div
+    class="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-12 px-6 py-24 lg:grid-cols-12 lg:gap-16"
+  >
+    <!-- Lado izquierdo -->
+    <div class="order-2 space-y-8 lg:order-1 lg:col-span-6 xl:col-span-7">
+      <!-- Badge -->
+      <div
+        class="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/15 px-4 py-2 text-sm font-semibold text-accent"
+      >
+        <span class="h-2 w-2 animate-pulse rounded-full bg-accent"></span>
+        Salud Visual Integral · Oaxaca
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-5xl font-bold leading-[1.08] text-white lg:text-[68px]">
+        Tu visión<br />
+        merece la<br />
+        <span class="relative inline-block">
+          <span
+            class="relative z-10 bg-gradient-to-r from-accent to-[#7dd8df] bg-clip-text text-transparent"
+          >
+            mejor atención
+          </span>
+          <svg
+            class="absolute -bottom-2 left-0 w-full text-accent/30"
+            viewBox="0 0 300 12"
+            fill="none"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M1 11c50-8 150-8 298 0"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="7"></path>
+          </svg>
+        </span>
+      </h1>
+
+      <p class="max-w-lg text-lg leading-relaxed text-slate-300">
+        Consultas optométricas y médicas especializadas con la
+        <strong class="font-semibold text-white">Dra. Mónica Ortiz</strong>.
+        Atendemos en Tlacolula y Ocotlán, Oaxaca.
+      </p>
+
+      <!-- CTAs -->
+      <div class="flex flex-wrap gap-4">
+        <a
+          href={whatsappUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-3 rounded-2xl bg-[#25D366] px-8 py-4 text-base font-bold text-white shadow-xl shadow-green-900/30 transition-all duration-300 hover:-translate-y-1 hover:bg-[#1ebe59] hover:shadow-green-900/50"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="h-5 w-5 shrink-0"
+          >
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+            ></path>
+          </svg>
+          Agendar cita por WhatsApp
+        </a>
+        <a
+          href="#servicios"
+          class="inline-flex items-center gap-2 rounded-2xl border border-white/25 px-8 py-4 text-base font-semibold text-white transition-all duration-300 hover:border-white/50 hover:bg-white/10"
+        >
+          Ver servicios
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-4 w-4"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div
+        class="flex flex-wrap items-center gap-8 border-t border-white/10 pt-8"
+      >
+        <div>
+          <p class="text-3xl font-bold text-white">2</p>
+          <p class="text-sm text-slate-400">Sucursales en Oaxaca</p>
+        </div>
+        <div class="h-10 w-px bg-white/10"></div>
+        <div>
+          <p class="font-bold text-accent">Optometría</p>
+          <p class="text-sm text-slate-400">Consulta especializada</p>
+        </div>
+        <div class="h-10 w-px bg-white/10"></div>
+        <div>
+          <p class="font-bold text-accent">Medicina Ocular</p>
+          <p class="text-sm text-slate-400">Diagnóstico y tratamiento</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lado derecho: imagen -->
+    <div
+      class="relative order-1 flex justify-center lg:order-2 lg:col-span-6 xl:col-span-5"
+    >
+      <div class="group relative w-full max-w-[420px]">
+        <!-- Glow detrás de la imagen -->
+        <div
+          class="absolute -inset-4 rounded-[50px] bg-gradient-to-tr from-primary/60 to-accent/25 opacity-60 blur-2xl"
+        ></div>
+
+        <!-- Imagen principal -->
+        <div
+          class="relative aspect-[4/5] overflow-hidden rounded-[40px] border-[10px] border-white/15 shadow-2xl"
+        >
+          <img
+            src="/hero.jpg"
+            alt="Consulta oftalmológica profesional"
+            class="h-full w-full scale-105 object-cover transition-all duration-700 [filter:grayscale(0.25)] group-hover:scale-100 group-hover:[filter:grayscale(0)]"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-primary/50 via-transparent to-transparent"
+          ></div>
+        </div>
+
+        <!-- Tarjeta flotante superior: sucursales -->
+        <div
+          class="absolute -top-4 -left-4 z-10 flex items-center gap-3 rounded-2xl border border-white/20 bg-white/10 p-4 shadow-xl backdrop-blur-md lg:-left-10"
+        >
+          <div
+            class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/30"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-5 w-5 text-accent"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-2.013 3.5-4.751 3.5-8.336C20 6.945 16.364 3 12 3S4 6.945 4 11.004c0 3.585 1.556 6.323 3.5 8.336a19.578 19.578 0 002.683 2.282 16.974 16.974 0 001.144.742z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-white">2 Sucursales</p>
+            <p class="text-xs text-slate-300">Tlacolula · Ocotlán</p>
+          </div>
+        </div>
+
+        <!-- Tarjeta flotante inferior: doctora -->
+        <div
+          class="absolute -bottom-4 -right-4 z-10 max-w-[210px] rounded-2xl bg-white p-4 shadow-2xl lg:-right-10"
+        >
+          <div class="mb-2 flex items-center gap-2">
+            <div
+              class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="text-primary h-5 w-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-primary text-xs font-bold leading-tight">
+                Dra. Mónica Ortiz R.
+              </p>
+              <p class="text-[11px] text-slate-400">Optometrista & Médico</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-1">
+            {
+              Array.from({ length: 5 }).map(() => (
+                <svg
+                  class="h-3.5 w-3.5 fill-current text-amber-400"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))
+            }
+            <span class="ml-1 text-xs font-semibold text-slate-500">5.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wave inferior -->
+  <div class="absolute bottom-0 left-0 right-0 pointer-events-none">
+    <svg
+      viewBox="0 0 1440 80"
+      xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="none"
+      class="h-16 w-full fill-white lg:h-20"
+    >
+      <path
+        d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"
+      ></path>
+    </svg>
+  </div>
+</section>

@@ -1,3 +1,8 @@
+---
+import Header from "@components/layout/Header.astro";
+import Footer from "@components/layout/Footer.astro";
+---
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -8,6 +13,8 @@
     <title>Optica del Centro</title>
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>
