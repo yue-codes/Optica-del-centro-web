@@ -17,7 +17,7 @@ export default function MobileMenu() {
     <div className="lg:hidden">
       <button
         onClick={() => setOpen(!open)}
-        className="p-2 text-primary rounded-lg hover:bg-slate-100 transition-colors"
+        className="hamburger-btn p-2 rounded-lg transition-colors"
         aria-label={open ? "Cerrar menú" : "Abrir menú"}
       >
         {open ? (
