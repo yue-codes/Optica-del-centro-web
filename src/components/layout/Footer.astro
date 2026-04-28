@@ -115,7 +115,23 @@ const socialLinks = [
   </div>
 
   <!-- Barra inferior -->
-  <div class="border-t border-white/10 py-5 text-center text-slate-400 text-xs">
-    © {new Date().getFullYear()} Óptica del Centro. Todos los derechos reservados.
+  <div class="sm:border-t sm:border-white/10 py-5">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-slate-400 text-xs">
+      <span>© {new Date().getFullYear()} Óptica del Centro. Todos los derechos reservados.</span>
+
+      <div class="w-full border-t border-white/10 sm:hidden"></div>
+
+      <div class="flex items-center gap-2.5 opacity-35">
+        <span class="tracking-[0.2em]">Diseñado por</span>
+        <img
+          src="/faviconnicrosil.svg"
+          alt="Nicrosil"
+          width="14"
+          height="14"
+          class="brightness-0 invert"
+        />
+        <span class="tracking-[0.15em]">nicrosil.dev</span>
+      </div>
+    </div>
   </div>
 </footer>
